@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+
+  .bubble-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  .bubble {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    animation: bubbleAnimation 5s linear infinite;
+  }
+
+  @keyframes bubbleAnimation {
+    0% {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: translateY(-300px) scale(2);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(-600px) scale(3);
+      opacity: 0;
+    }
+  }
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <div class="bubble-container">
+    <div class="bubble" style="top: 90%; left: 10%; background-color: #ff4500;"></div>
+    <div class="bubble" style="top: 80%; left: 20%; background-color: #ffd700;"></div>
+    <div class="bubble" style="top: 70%; left: 30%; background-color: #32cd32;"></div>
+    <div class="bubble" style="top: 60%; left: 40%; background-color: #4682b4;"></div>
+    <div class="bubble" style="top: 50%; left: 50%; background-color: #ff69b4;"></div>
+    <div class="bubble" style="top: 40%; left: 60%; background-color: #9400d3;"></div>
+    <div class="bubble" style="top: 30%; left: 70%; background-color: #00ffff;"></div>
+    <div class="bubble" style="top: 20%; left: 80%; background-color: #ff8c00;"></div>
+    <div class="bubble" style="top: 10%; left: 90%; background-color: #ff6347;"></div>
+  </div>
+  <div class="text">Happy Birthdy, Jihad. May this day bring you immense pleasure and joy!</div>
+</body>
+</html>
